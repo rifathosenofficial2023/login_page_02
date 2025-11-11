@@ -15,21 +15,22 @@ class _LoginPageState extends State<LoginPage> {
       body: SafeArea(
         child: Center(
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              SizedBox(height: 25,),
+              SizedBox(height: 75,),
               // Hello again!
           
               Text("Hello Again!",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
-                fontSize: 24,
+                fontSize: 34,
               ),),
               SizedBox(height: 10,),
               Text("Welcome back, you\'ve been missed!",
               style: TextStyle(
                 fontSize: 20,
               ),),
-              SizedBox(height: 20,),
+              SizedBox(height: 40,),
           
               //emaill textfield
               Padding(
@@ -97,9 +98,25 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 10,),
+              SizedBox(height: 20,),
           
               // not a member? register now
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text('Not a member?',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold
+                  ),
+                  ),
+                  Text(' Register now',
+                  style: TextStyle(
+                    color: Colors.blue,
+                    fontWeight: FontWeight.bold
+                  ),
+                  )
+                ],
+              )
           
             ],
           ),
